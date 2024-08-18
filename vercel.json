@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "./server.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/"
+      }
+    ],
+    "env": {
+      "MONGO_URL": "mongodb+srv://keerthigottam0215:ujwala123@ecommercecluster.segrjed.mongodb.net/ecommerceData?retryWrites=true&w=majority&appName=ecommerceCluster",
+      "secretKey": "secret"
+    }
+  }
+  
